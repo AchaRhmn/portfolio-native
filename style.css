@@ -17,6 +17,47 @@ body{
     background-color: #212126;
 }
 
+/* lobby */
+.lob{
+    background-image: url("img/lob_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-color: #212126;
+    background-blend-mode: lighten;
+    width: 100%;
+    height: 100vh;
+    background-position: center top 40%;
+    align-content: center;
+    text-align: center;
+}
+
+
+#start_btn{
+  
+    width: 16%;
+    height: 65px;
+    border: none;
+    margin-top: 11%;
+    background-color: #21212600;
+    cursor: pointer;
+    font-size: xx-large;
+    font-family: "Black Ops One", system-ui;
+    color: rgb(255, 118, 255);
+}
+
+#start_btn:hover{
+    font-size: 50px;
+    color: #ffff;
+    transition: 300ms;
+    text-shadow: 0 0 10px #f895cf, 0 0 20px #f895cf, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+/* index */
+@font-face {
+    font-family: 'Viyola';
+    src: url('font/Viyola-qZ2jq.ttf') format('truetype');
+}
+
 .navbar{
     background-color: #53535362;
     display: flex;
@@ -26,17 +67,24 @@ body{
     position: sticky;
     border-bottom: 1px solid #ffff;
     box-shadow: 0 0 50px 0 #8888888a;
+    z-index: 10;
+    
+}
+
+.navbar>a{
+    text-decoration: none;
 }
 
 
-.navbar>h2{
+.navbar>a>h2{
     font-family: "Megrim", system-ui;
     font-size: x-large;
+    
 }
 
-.navbar>h2:hover{
+.navbar>a>h2:hover{
     font-family: "Megrim", system-ui;
-    color: rgb(137, 208, 255);
+    color: #89d0ff;
     transition: 300ms;
     cursor: pointer;
 
@@ -59,41 +107,63 @@ body{
     cursor: pointer;
 }
 
-.lob{
-    background-image: url("img/lob_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-color: #212126;
-    background-blend-mode: lighten;
-    width: 100%;
-    height: 100vh;
-    background-position: center top 40%;
-    align-content: center;
-    text-align: center;
-}
-
-#firstname{
-    
+#name{
+    font-family: 'Viyola', sans-serif;
     margin: auto;
     font-size: 500%;
+    font-weight: 100;
 }
 
-#start_btn{
-  
-    width: 16%;
-    height: 65px;
-    border: none;
-    margin-top: 11%;
+.prof_content{
+    margin-top: -5%;
+    padding-top: 0;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 800px;
+    background-image: url("img/index_prof-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 0 0 10px #1d1d1d, 0 0 20px #141941, 0 0 30px #000000;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+#name, #desc {
+    position: relative;
+    z-index: 2; 
+}
+
+
+#next{
+    background-image: url("img/dot1.png");
     background-color: #21212600;
+    background-blend-mode: lighten;
+    border: none;
+    display: flex;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
-    font-size: xx-large;
-    font-family: "Black Ops One", system-ui;
-    color: rgb(255, 118, 255);
+
+    position: absolute; 
+    bottom: 15%; 
+    left: 50%;
+    z-index: 2;
+    
 }
 
-#start_btn:hover{
-    font-size: 50px;
-    color: #ffff;
+#next:hover{
+    background-image: url(img/dot.png);
     transition: 300ms;
-    text-shadow: 0 0 10px #f895cf, 0 0 20px #f895cf, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    cursor: pointer;
+
+    
 }
