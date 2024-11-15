@@ -1,6 +1,6 @@
 /* Add styles here */
 *{
-    font-family: "Playfair Display", serif;
+    font-family: "Montserrat", serif;
     color: aliceblue;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@
   
 
 body{
-    background-color: #212126;
+    background-color: #2a2a3b;
 }
 
 /* lobby */
@@ -32,7 +32,7 @@ body{
 }
 
 
-#start_btn{
+/* #start_btn{
   
     width: 16%;
     height: 65px;
@@ -50,6 +50,44 @@ body{
     color: #ffff;
     transition: 300ms;
     text-shadow: 0 0 10px #f895cf, 0 0 20px #f895cf, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+} */
+
+#start_btn{
+    margin-top: 11%;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+
+   
+#start_btn:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+}
+   
+#start_btn:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
 }
 
 /* index */
@@ -140,6 +178,7 @@ canvas {
 #name, #desc {
     position: relative;
     z-index: 2; 
+    font-weight: 200;
 }
 
 
