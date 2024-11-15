@@ -18,8 +18,9 @@ body{
 }
 
 .navbar{
-    background-color: #53535381;
+    background-color: #53535362;
     display: flex;
+    top: 0;
     align-items: center;
     padding: 20px 15px;
     position: sticky;
@@ -58,19 +59,41 @@ body{
     cursor: pointer;
 }
 
-.prof{
-    background-image: url("img/prof_bg.jpg");
+.lob{
+    background-image: url("img/lob_bg.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 150%;
     background-color: #212126;
     background-blend-mode: lighten;
     width: 100%;
     height: 100vh;
+    background-position: center top 40%;
     align-content: center;
+    text-align: center;
 }
 
 #firstname{
     
     margin: auto;
     font-size: 500%;
+}
+
+#start_btn{
+  
+    width: 16%;
+    height: 65px;
+    border: none;
+    margin-top: 11%;
+    background-color: #21212600;
+    cursor: pointer;
+    font-size: xx-large;
+    font-family: "Black Ops One", system-ui;
+    color: rgb(255, 118, 255);
+}
+
+#start_btn:hover{
+    font-size: 50px;
+    color: #ffff;
+    transition: 300ms;
+    text-shadow: 0 0 10px #f895cf, 0 0 20px #f895cf, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 }
