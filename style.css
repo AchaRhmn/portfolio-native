@@ -1,4 +1,76 @@
 /* Add styles here */
 *{
     font-family: "Playfair Display", serif;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.megrim-regular {
+    font-family: "Megrim", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body{
+    background-color: #212126;
+}
+
+.navbar{
+    background-color: #53535381;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    position: sticky;
+    border-bottom: 1px solid #ffff;
+    box-shadow: 0 0 50px 0 #8888888a;
+}
+
+
+.navbar>h2{
+    font-family: "Megrim", system-ui;
+    font-size: x-large;
+}
+
+.navbar>h2:hover{
+    font-family: "Megrim", system-ui;
+    color: rgb(137, 208, 255);
+    transition: 300ms;
+    cursor: pointer;
+
+}
+
+.navbar>.links{
+    margin-left: auto;
+    display: flex;
+    align-content: space-between;
+}
+
+.links>a{
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+.links>a:hover{
+    color: rgb(137, 208, 255);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.prof{
+    background-image: url("img/prof_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #212126;
+    background-blend-mode: lighten;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+}
+
+#firstname{
+    
+    margin: auto;
+    font-size: 500%;
 }
