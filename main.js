@@ -221,15 +221,25 @@ const STAR_COLOR = '#fff';
         }
 
 
+
+function scrollsk() {
+    const section = document.getElementById('sinilunavbarcapegua'); 
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.error('Section not found');
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('next').addEventListener('click', function(event) {
+    document.getElementById('nav_skill').addEventListener('click', function(event) {
         event.preventDefault(); 
-        scroll();
+        scrollsk();
     });
 });
 
-function scroll() {
-    const section = document.getElementById('skill'); 
+function scrollprof() {
+    const section = document.getElementById('efisiensekaleeh'); 
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
     } else {
@@ -240,7 +250,23 @@ function scroll() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('nav_prof').addEventListener('click', function(event) {
         event.preventDefault(); 
-        scroll();
+        scrollprof();
+    });
+});
+
+function scrollct() {
+    const section = document.getElementById('anjayjadi'); 
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.error('Section not found');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('nav_contact').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        scrollct();
     });
 });
      
