@@ -1,4 +1,4 @@
-/* Add styles here */
+
 *{
     font-family: "Montserrat", serif;
     color: aliceblue;
@@ -18,7 +18,7 @@ body{
 }
 
 /* lobby */
-.lob{
+.lob {
     background-image: url("img/lob_bg.jpg");
     background-repeat: no-repeat;
     background-size: 150%;
@@ -31,7 +31,7 @@ body{
     text-align: center;
 }
 
-#start_btn{
+#start_btn {
     margin-top: 11%;
     --glow-color: rgb(217, 176, 255);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
@@ -46,30 +46,56 @@ body{
     border-radius: 1em;
     outline: none;
     box-shadow: 0 0 1em .25em var(--glow-color),
-            0 0 4em 1em var(--glow-spread-color),
-            inset 0 0 .75em .25em var(--glow-color);
+                0 0 4em 1em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
     transition: all 0.3s;
 }
 
-
-   
 #start_btn:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
     box-shadow: 0 0 1em .25em var(--glow-color),
-           0 0 4em 2em var(--glow-spread-color),
-           inset 0 0 .75em .25em var(--glow-color);
-}
-   
-#start_btn:active {
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-           0 0 2.5em 2em var(--glow-spread-color),
-           inset 0 0 .5em .25em var(--glow-color);
+                0 0 4em 2em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
 }
 
-/* index */
+#start_btn:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+                0 0 2.5em 2em var(--glow-spread-color),
+                inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+@media (max-width: 768px) { 
+    .lob {
+        background-size: 180%; 
+        background-position: center top 50%;
+    }
+
+    #start_btn {
+        font-size: 14px; 
+        padding: 0.8em 2.5em; 
+        margin-top: 0; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .lob {
+        background-size: 200%; 
+        background-position: center top 60%;
+    }
+
+    #start_btn {
+        font-size: 12px; 
+        padding: 0.7em 2em; 
+        margin-top: 15%; 
+    }
+}
+
+
+/* navbar */
 @font-face {
     font-family: 'mojangcraft';
     src: url('font/mojangcraft.ttf') format('truetype');
@@ -123,6 +149,63 @@ body{
     transition: 300ms;
     cursor: pointer;
 }
+
+@media (max-width: 480px) { 
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px 20px; 
+        
+    }
+
+    .navbar > a > h2 {
+        position: absolute; 
+        top: 10px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        font-size: medium; 
+        margin-bottom: 0; 
+        text-align: center;
+        padding-top: 10px; 
+    }
+
+    .navbar > .links {
+        margin-top: 60px; 
+        width: 100%; 
+        justify-content: space-between; 
+    }
+
+    .links > a {
+        font-size: 12px; 
+        margin: 0px 5px; 
+    }
+}
+
+
+@media (max-width: 480px) { 
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px 20px; 
+    }
+
+    .navbar > a > h2 {
+        font-size: medium; 
+        margin-bottom: 10px; 
+    }
+
+    .navbar > .links {
+        width: 100%; 
+        justify-content: space-between; 
+    }
+
+    .links > a {
+        font-size: 12px; 
+        margin: 0px 5px; 
+    }
+}
+
+/* prof */
 
 #fname{
     font-family: 'mojangcraft', sans-serif;
@@ -259,4 +342,5 @@ canvas {
 .card h2:hover #card_desc {
     display: block; 
     margin: 24px 20px;
+    text-align: justify;
 }

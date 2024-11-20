@@ -1,6 +1,4 @@
 // Add JS here
-
-//stars effect hehehehehehe :v (this one is not mine though, i just found it and put it here. but its pretty :3)
 const STAR_COLOR = '#fff';
         const STAR_SIZE = 3;
         const STAR_MIN_SCALE = 0.2;
@@ -222,7 +220,6 @@ const STAR_COLOR = '#fff';
 
         }
 
-//starting below this line is my originals -3-
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('next').addEventListener('click', function(event) {
@@ -239,4 +236,11 @@ function scroll() {
         console.error('Section not found');
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('nav_prof').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        scroll();
+    });
+});
      
