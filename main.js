@@ -1,4 +1,6 @@
 // Add JS here
+
+//stars effect hehehehehehe :v (this one is not mine though, i just found it and put it here. but its pretty :3)
 const STAR_COLOR = '#fff';
         const STAR_SIZE = 3;
         const STAR_MIN_SCALE = 0.2;
@@ -8,7 +10,7 @@ const STAR_COLOR = '#fff';
         const canvas = document.querySelector( 'canvas' ),
             context = canvas.getContext( '2d' );
 
-        let scale = 1, // device pixel ratio
+        let scale = 1, 
             width,
             height;
 
@@ -143,7 +145,6 @@ const STAR_COLOR = '#fff';
                 star.y += ( star.y - height/2 ) * velocity.z * star.z;
                 star.z += velocity.z;
 
-                // recycle when out of bounds
                 if( star.x < -OVERFLOW_THRESHOLD || star.x > width + OVERFLOW_THRESHOLD || star.y < -OVERFLOW_THRESHOLD || star.y > height + OVERFLOW_THRESHOLD ) {
                     recycleStar( star );
                 }
@@ -168,7 +169,6 @@ const STAR_COLOR = '#fff';
                 var tailX = velocity.x * 2,
                     tailY = velocity.y * 2;
 
-                // stroke() wont work on an invisible line
                 if( Math.abs( tailX ) < 0.1 ) tailX = 0.5;
                 if( Math.abs( tailY ) < 0.1 ) tailY = 0.5;
 
@@ -222,4 +222,21 @@ const STAR_COLOR = '#fff';
 
         }
 
-        
+//starting below this line is my originals -3-
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('next').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        scroll();
+    });
+});
+
+function scroll() {
+    const section = document.getElementById('skill'); 
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.error('Section not found');
+    }
+}
+     

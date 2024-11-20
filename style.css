@@ -31,27 +31,6 @@ body{
     text-align: center;
 }
 
-
-/* #start_btn{
-  
-    width: 16%;
-    height: 65px;
-    border: none;
-    margin-top: 11%;
-    background-color: #21212600;
-    cursor: pointer;
-    font-size: xx-large;
-    font-family: "Black Ops One", system-ui;
-    color: rgb(255, 118, 255);
-}
-
-#start_btn:hover{
-    font-size: 50px;
-    color: #ffff;
-    transition: 300ms;
-    text-shadow: 0 0 10px #f895cf, 0 0 20px #f895cf, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-} */
-
 #start_btn{
     margin-top: 11%;
     --glow-color: rgb(217, 176, 255);
@@ -92,8 +71,8 @@ body{
 
 /* index */
 @font-face {
-    font-family: 'Viyola';
-    src: url('font/Viyola-qZ2jq.ttf') format('truetype');
+    font-family: 'mojangcraft';
+    src: url('font/mojangcraft.ttf') format('truetype');
 }
 
 .navbar{
@@ -101,7 +80,7 @@ body{
     display: flex;
     top: 0;
     align-items: center;
-    padding: 20px 15px;
+    padding: 20px 40px;
     position: sticky;
     border-bottom: 1px solid #ffff;
     box-shadow: 0 0 50px 0 #8888888a;
@@ -145,11 +124,20 @@ body{
     cursor: pointer;
 }
 
-#name{
-    font-family: 'Viyola', sans-serif;
+#fname{
+    font-family: 'mojangcraft', sans-serif;
     margin: auto;
-    font-size: 500%;
+    font-size: 400%;
     font-weight: 100;
+}
+
+#name{
+    margin-top: -15px;
+    font-size: 250%;
+}
+
+#desc{
+    font-size: 130%;
 }
 
 .prof_content{
@@ -161,6 +149,7 @@ body{
     width: 100%;
     height: 800px;
     background-image: url("img/index_prof-bg.jpg");
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 0 0 10px #1d1d1d, 0 0 20px #141941, 0 0 30px #000000;
@@ -175,7 +164,7 @@ canvas {
     z-index: 1; 
 }
 
-#name, #desc {
+#fname, #name, #desc {
     position: relative;
     z-index: 2; 
     font-weight: 200;
@@ -205,4 +194,69 @@ canvas {
     cursor: pointer;
 
     
+}
+
+/* skills */
+.skills{
+    margin: 10% 20%;
+}
+
+.card {
+    width: 100%;
+    height: 260px;
+    border-radius: 5px;
+    background: #1b1b27;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.card h2 {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 500ms;
+    background: #1b1b27;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+
+}
+
+.card h2:hover {
+    background-color: #262a46;
+    flex: 4;
+}
+
+.card h2 span {
+    min-width: 150%;
+    padding: 5px;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all 500ms;
+    text-transform: uppercase;
+}
+
+.card h2:hover span {
+    display: none;
+}
+
+#card_desc {
+    font-weight: 300;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+.card h2:hover #card_desc {
+    display: block; 
+    margin: 24px 20px;
 }
