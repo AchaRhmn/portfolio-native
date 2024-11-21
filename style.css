@@ -851,7 +851,6 @@ canvas {
     }
   }
   
-  /* Untuk Ponsel */
   @media (max-width: 768px) {
     .contact {
       padding: 10%;
@@ -864,6 +863,10 @@ canvas {
   
     .form-title {
       font-size: 20px;
+    }
+
+    .title-2{
+        font-size:40px;
     }
   
     #input,
