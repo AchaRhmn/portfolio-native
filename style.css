@@ -66,12 +66,12 @@ body{
                 inset 0 0 .5em .25em rgb(217, 176, 255);
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
     #start_btn {
         font-size: 14px; 
         padding: 0.8em 2.5em; 
         align-items: center;
-        margin-top: 28%;
+        margin: auto;
     }
 }
 
@@ -260,7 +260,7 @@ canvas {
     font-weight: 200;
 }
 
-@media (min-width: 1600px) { 
+@media (min-width: 1700px) { 
     
 
     #fname {
