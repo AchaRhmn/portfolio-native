@@ -66,6 +66,14 @@ body{
                 inset 0 0 .5em .25em rgb(217, 176, 255);
 }
 
+@media (min-width: 1600px) {
+    #start_btn {
+        font-size: 14px; 
+        padding: 0.8em 2.5em; 
+        align-items: center;
+        margin-top: 28%;
+    }
+}
 
 @media (max-width: 768px) { 
     .lob {
@@ -252,6 +260,29 @@ canvas {
     font-weight: 200;
 }
 
+@media (min-width: 1600px) { 
+    
+
+    #fname {
+        font-size: 300%; 
+    }
+
+    #name {
+        margin-top: -10px; 
+        font-size: 200%; 
+    }
+
+    #desc {
+        font-size: 110%; 
+    }
+
+    .prof_content {
+        padding-top: 20%;
+        height: 100vh; 
+        background-size: 120%; 
+        align-items: center;
+    }
+}
 
 @media (max-width: 768px) { 
     #fname {
@@ -820,7 +851,6 @@ canvas {
     }
   }
   
-  /* Untuk Ponsel */
   @media (max-width: 768px) {
     .contact {
       padding: 10%;
@@ -833,6 +863,10 @@ canvas {
   
     .form-title {
       font-size: 20px;
+    }
+
+    .title-2{
+        font-size:40px;
     }
   
     #input,
