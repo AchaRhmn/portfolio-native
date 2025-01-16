@@ -37,7 +37,7 @@ $(function(){
                 dta.TESTI.forEach(function(isi){
                     if(dta.error==0){
                         ipx = isi.IPX
-                        cmdhapus = `<a onclick="hapus('${isi.IDX}')" class="btn btn-danger btn-sm"> Hapus </a>`
+                        cmdhapus = `<a onclick="hapus('${isi.IDX}')" class="btntesti btn-danger btn-sm"> Hapus </a>`
                     } 
                     tbl += `<tr>
                 <td><img src="${isi.GRAVATAR}" width="75"> ${isi.NAMA}</td>
